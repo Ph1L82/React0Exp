@@ -1,14 +1,13 @@
-import { heroes } from "./data/heroes";
+const activo = true;
+// let mensaje = " ";
 
-console.log(heroes);
+// if (!activo) {
+//   mensaje = "Activo";
+// } else {
+//   mensaje = "Inactivo";
+// }
 
-const getHeroeById = (id) => {
-  return heroes.find((heroe) => heroe.id === id);
-};
+// const mensaje = activo ? "Activo" : "Inactivo";
+const mensaje = activo && "Activo";
 
-console.log(getHeroeById(2));
-
-const getHeroeByOwner = (owner) =>
-  heroes.filter((heroe) => heroe.owner === owner);
-
-console.log(getHeroeByOwner("DC"));
+console.log(mensaje);
